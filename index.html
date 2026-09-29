@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Teacher's Month</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background decorations -->
+    <div class="circle circle1"></div>
+    <div class="circle circle2"></div>
+
+    <header>
+        <div class="logo">✦ OUR CLASS</div>
+        <div class="teacher-month">TEACHER'S MONTH 2026</div>
+    </header>
+
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero">
+
+            <div class="hero-text">
+
+                <p class="small-title">
+                    A MESSAGE FROM YOUR STUDENTS
+                </p>
+
+                <h1>
+                    Thank You,<br>
+                    <span>Ma'am Mari!</span>
+                </h1>
+
+                <p class="intro">
+                    Behind every lesson, activity, and deadline
+                    is a teacher who continues to guide us.
+                    This little page is our way of saying thank you.
+                </p>
+
+                <button onclick="showMessage()">
+                    Read Our Message ↓
+                </button>
+
+            </div>
+
+
+            <!-- PHOTO -->
+            <div class="photo-area">
+
+                <div class="tape"></div>
+
+                <div class="photo-card">
+
+                    <img src="teacherr.jpg"
+                         alt="Our Teacher and Class">
+
+                    <div class="photo-caption">
+                        <span>MEMORIES</span>
+                        <p>One class, many memories.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SONG -->
+        <section class="song-section">
+
+            <div class="music-icon">
+                ♪
+            </div>
+
+            <div class="song-info">
+                <p class="song-label">A SONG FOR YOU</p>
+                <h2>Press play and enjoy 🎵</h2>
+                <p>
+                    A little music to go along with our message.
+                </p>
+            </div>
+
+            <audio id="song" controls>
+                <source src="song4teacher.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+        </section>
+
+
+        <!-- MESSAGE -->
+        <section class="message" id="message">
+
+            <div class="line"></div>
+
+            <p class="quote">
+                "Every lesson becomes a memory."
+            </p>
+
+            <h2>You Made This Year Meaningful.</h2>
+
+            <p>
+                Thank you for all the patience, effort, and guidance you give us. We truly appreciate every lesson you teach and every reminder that helps us become better students.
+            </p>
+
+            <p>
+                We know teaching isn't always easy, but you
+                still continue to guide us and encourage us
+                to do our best.
+            </p>
+
+            <p>
+                We may not say it all the time, but we truly
+                appreciate everything you do for us.
+            </p>
+
+            <div class="signature">
+                With gratitude,<br>
+                <strong>-Michael San Juan ❤️</strong>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>Made with appreciation and gratitude ✦</p>
+        <p>Happy Teacher's Month!</p>
+    </footer>
+
+
+    <script>
+
+        function showMessage() {
+
+            const message =
+                document.getElementById("message");
+
+            message.classList.add("show");
+
+            message.scrollIntoView({
+                behavior: "smooth"
+            });
+
+        }
+
+    </script>
+
+</body>
+</html>

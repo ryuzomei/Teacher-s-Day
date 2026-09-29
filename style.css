@@ -1,0 +1,424 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fa;
+    color: #26384a;
+    overflow-x: hidden;
+}
+
+
+/* BACKGROUND */
+
+.circle {
+    position: fixed;
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0.35;
+}
+
+.circle1 {
+    width: 300px;
+    height: 300px;
+    background: #dce9f3;
+    top: 100px;
+    left: -120px;
+}
+
+.circle2 {
+    width: 350px;
+    height: 350px;
+    background: #f0dfb7;
+    bottom: -150px;
+    right: -120px;
+}
+
+
+/* HEADER */
+
+header {
+    height: 70px;
+    background: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 8%;
+
+    border-bottom: 1px solid #dde5ec;
+}
+
+.logo {
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #315a7d;
+}
+
+.teacher-month {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #7b8996;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 620px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 70px;
+
+    padding: 80px 10%;
+}
+
+.hero-text {
+    max-width: 520px;
+}
+
+.small-title {
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: bold;
+
+    color: #7892a8;
+
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 70px;
+    line-height: 0.95;
+
+    color: #263f56;
+
+    margin-bottom: 28px;
+}
+
+h1 span {
+    color: #d49a42;
+}
+
+.intro {
+    color: #687887;
+
+    font-size: 17px;
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+}
+
+button {
+    border: none;
+
+    background: #315a7d;
+    color: white;
+
+    padding: 15px 25px;
+
+    border-radius: 6px;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #223f57;
+    transform: translateY(-3px);
+}
+
+
+/* PHOTO */
+
+.photo-area {
+    width: 470px;
+    position: relative;
+}
+
+.photo-card {
+    background: white;
+
+    padding: 15px 15px 22px;
+
+    box-shadow:
+        0 20px 45px rgba(45, 65, 85, 0.18);
+
+    transform: rotate(2deg);
+
+    transition: 0.4s;
+}
+
+.photo-card:hover {
+    transform: rotate(0deg) translateY(-8px);
+}
+
+.photo-card img {
+    width: 100%;
+    height: 330px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.photo-caption {
+    padding-top: 16px;
+    text-align: center;
+}
+
+.photo-caption span {
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: #d49a42;
+    font-weight: bold;
+}
+
+.photo-caption p {
+    margin-top: 5px;
+
+    font-family: Georgia, serif;
+
+    color: #586b7b;
+}
+
+
+/* TAPE */
+
+.tape {
+    position: absolute;
+
+    width: 110px;
+    height: 30px;
+
+    background: #e6d5a6;
+
+    opacity: 0.85;
+
+    top: -14px;
+    left: 180px;
+
+    transform: rotate(-5deg);
+
+    z-index: 2;
+}
+
+
+/* SONG */
+
+.song-section {
+    width: 80%;
+    max-width: 900px;
+
+    margin: 10px auto 80px;
+
+    background: #263f56;
+    color: white;
+
+    padding: 30px 35px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 25px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 15px 30px rgba(35, 55, 75, 0.15);
+}
+
+.music-icon {
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #d49a42;
+
+    border-radius: 50%;
+
+    font-size: 28px;
+}
+
+.song-info {
+    flex: 1;
+}
+
+.song-label {
+    font-size: 10px;
+    letter-spacing: 3px;
+
+    color: #d9b36c;
+
+    margin-bottom: 5px;
+}
+
+.song-info h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.song-info p:last-child {
+    color: #bdcad5;
+    font-size: 13px;
+}
+
+audio {
+    width: 280px;
+}
+
+
+/* MESSAGE */
+
+.message {
+    width: 80%;
+    max-width: 760px;
+
+    margin: 0 auto 90px;
+
+    padding: 55px;
+
+    background: white;
+
+    text-align: center;
+
+    box-shadow:
+        0 15px 40px rgba(45, 65, 85, 0.10);
+
+    border-radius: 10px;
+
+    opacity: 0;
+
+    transform: translateY(40px);
+
+    transition: 0.8s;
+}
+
+.message.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.line {
+    width: 55px;
+    height: 4px;
+
+    background: #d49a42;
+
+    margin: 0 auto 25px;
+}
+
+.quote {
+    font-family: Georgia, serif;
+
+    font-size: 18px;
+    font-style: italic;
+
+    color: #d49a42;
+
+    margin-bottom: 25px;
+}
+
+.message h2 {
+    font-size: 30px;
+
+    color: #29465f;
+
+    margin-bottom: 22px;
+}
+
+.message p {
+    color: #687887;
+
+    line-height: 1.8;
+
+    margin-bottom: 15px;
+}
+
+.signature {
+    margin-top: 30px;
+
+    font-family: Georgia, serif;
+
+    color: #315a7d;
+
+    line-height: 1.8;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #20374b;
+
+    color: #d9e3eb;
+
+    text-align: center;
+
+    padding: 25px;
+
+    font-size: 12px;
+
+    line-height: 1.8;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 850px) {
+
+    header {
+        padding: 0 5%;
+    }
+
+    .teacher-month {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 60px 6%;
+    }
+
+    h1 {
+        font-size: 52px;
+    }
+
+    .photo-area {
+        width: 95%;
+        max-width: 470px;
+    }
+
+    .song-section {
+        width: 90%;
+
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    audio {
+        width: 100%;
+    }
+
+    .message {
+        width: 90%;
+        padding: 35px 25px;
+    }
+
+}
